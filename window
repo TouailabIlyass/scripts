@@ -1,0 +1,25 @@
+# Get the window ID using the xdotool for the classname
+WINDOW_ID=$(xdotool search -classname "$1")
+
+# Get the window state using the ID.
+for wid in $WINDOW_ID; do
+        WINDOW_STATE=$(xprop -id "$wid" \
+        | grep "_NET_WM_STATE(ATOM)")
+        # Hide or activate the window.
+        if [[ -z "$WINDOW_STATE" ]]; then
+                # Empty = buried somewhere.
+                xdotool windowactivate "$wid"
+        elif [[ -n "$WINDOW_STATE" ]]; then
+                WINDOW_HIDDEN=$(echo "$WINDOW_STATE" \
+                | grep "_NET_WM_STATE_HIDDEN")
+                if [[ -z "$WINDOW_HIDDEN" ]]; then
+                        xdotool windowminimize "$wid"
+                else
+                        xdotool windowactivate "$wid"
+                fi
+        fi
+        # Display information
+        if [[ -n "$2" ]]; then
+                printf "WINDOW_ID: $wid\nWINDOW_STATE: $WINDOW_STATE"
+        fi
+done

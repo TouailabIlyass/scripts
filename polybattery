@@ -1,0 +1,11 @@
+#!/bin/bash
+
+state=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep 'present\|state\|percentage' | awk '{print $2}')
+
+
+if [ -z "$state" ]
+then
+	echo 'offline'
+else
+	echo $state
+fi

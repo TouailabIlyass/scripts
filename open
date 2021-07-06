@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##this file is used to open htdocs as root
+##this file is moved to /usr/local/bin
+
+sudo nemo /opt/lampp/htdocs &>> /dev/null

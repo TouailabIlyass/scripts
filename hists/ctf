@@ -1,0 +1,11 @@
+: 1607544674:0;ls
+: 1607544681:0;exit
+: 1607545129:0;echo $HISTFILE
+: 1607545135:0;vim chhist
+: 1607545148:0;source ./chhist dev
+: 1607545290:0;echo $HISTFILE
+: 1607545309:0;ls
+: 1607545315:0;cat web
+: 1607545323:0;vim chhist
+: 1607546116:0;. ./chhist ctf
+: 1607546120:0;. ./chhist dev

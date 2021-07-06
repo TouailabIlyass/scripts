@@ -1,0 +1,47 @@
+: 1607271592:0;ls
+: 1607271636:0;history -a
+: 1607271645:0;ls
+: 1607543891:0;ls
+: 1607543910:0;./chhist dev
+: 1607543917:0;kkk
+: 1607543927:0;./chhist ctf
+: 1607543929:0;kk
+: 1607543943:0;vim chhist
+: 1607544067:0;echo $HISTFILE
+: 1607544077:0;vim chhist
+: 1607544088:0;./chhist ctf
+: 1607544094:0;vim chhist
+: 1607544116:0;./chhist ctf
+: 1607544121:0;vim chhist
+: 1607544134:0;./chhist ctf
+: 1607544139:0;echo $HISTFILE
+: 1607544169:0;vim chhist
+: 1607544260:0;./chhist ctf
+: 1607544263:0;vim chhist
+: 1607544272:0;./chhist ctf
+: 1607544277:0;echo $HISTFILE
+: 1607544391:0;vim chhist
+: 1607544405:0;./chhist ctf
+: 1607544407:0;echo $HISTFILE
+: 1607544414:0;./chhist ctf
+: 1607544417:0;vim chhist
+: 1607544667:0;./chhist ctf
+: 1607544688:0;echo $HISTFILE
+: 1607544731:0;vim chhist
+: 1607544746:0;./chhist ctf
+: 1607544747:0;echo $HISTFILE
+: 1607544755:0;./chhist ctf
+: 1607544758:0;vim chhist
+: 1607544778:0;./chhist ctf
+: 1607544788:0;vim chhist
+: 1607544948:0;./chhist ctf
+: 1607544953:0;echo $HISTFILE
+: 1607545127:0;source ./chhist
+: 1607545152:0;echo $HISTFILE
+: 1607545210:0;source= ./chhist dev
+: 1607545284:0;. ./chhist ctf
+: 1607546124:0;echo $HISTFILE
+: 1607546132:0;vim chhist
+: 1607546885:0;. ./chhist dev
+: 1607546918:0;sudo mv chhist /usr/bin/chhist
+: 1607546925:0;exit

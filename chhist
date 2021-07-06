@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+####
+### this file is moved to /usr/bin
+######
+export HISTFILE=/home/drging/hists/$1
+echo $(echo $HISTFILE)| rev | cut -d '/' -f1 | rev | {read out; echo "switched to {$out}"}
+
